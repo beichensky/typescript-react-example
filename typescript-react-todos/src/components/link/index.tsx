@@ -1,13 +1,12 @@
 import * as React from 'react';
 
 
-export interface IProps {
+interface IProps {
     active: boolean;
-    children: React.ReactNode;
     onClick: () => void;
 }
 
-const Link = ({ active, children, onClick }: IProps) => (
+const Link: React.SFC<IProps> = ({ active, children, onClick }) => (
     <button
        onClick={ onClick }
        disabled={ active }

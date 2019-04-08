@@ -6,7 +6,7 @@ import Link from '../../components/link';
 import { IStoreState, VisibilityFilters } from '../../types';
 
 
-export interface IProps {
+interface IProps {
     filter: VisibilityFilters
 }
 

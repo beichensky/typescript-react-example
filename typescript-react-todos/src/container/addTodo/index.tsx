@@ -5,11 +5,7 @@ import { Dispatch } from 'redux';
 import { addTodo } from '../../actions';
 
 
-export interface IProps {
-    dispatch: Dispatch
-}
-
-const AddTodo = ({ dispatch }: IProps) => {
+const AddTodo = ({ dispatch }: { dispatch: Dispatch }) => {
     let input: HTMLInputElement | null;
 
     const handleSubmit = (e: React.FormEvent) => {

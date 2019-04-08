@@ -5,7 +5,7 @@ import { Todo as TodoClass } from '../../types';
 import Todo from '../todo';
 
 
-export interface IProps {
+interface IProps {
     todos: TodoClass[];
     toggleTodo: (id: number) => IToggleTodoAction
 }
