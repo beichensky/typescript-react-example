@@ -4,10 +4,12 @@ import { Dispatch } from 'redux';
 import { setVisibilityFilter } from '../../actions';
 import Link from '../../components/link';
 import { IStoreState, VisibilityFilters } from '../../types';
+import { ReactNode } from 'react';
 
 
 interface IProps {
-    filter: VisibilityFilters
+    filter: VisibilityFilters,
+    children: ReactNode
 }
 
 const mapStateToProps = (state: IStoreState, ownProps: IProps): { active: boolean } => ({
